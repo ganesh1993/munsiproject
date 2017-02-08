@@ -139,7 +139,44 @@ var table_area = "CREATE TABLE IF NOT EXISTS AREA(" +
                  " UPDATED_TS      TEXT, " +
                  " CREATED_BY      INTEGER," +
                  " UPDATED_BY      INTEGER)";
-       db.run(table_dcpurdetails);
+          db.run(table_dcpurdetails);
+
+
+          var table_disp = "CREATE TABLE IF NOT EXISTS DISP(" +
+                 " ID              INTEGER PRIMARY KEY AUTOINCREMENT," +
+                 " DISP_ID         INTEGER, " +
+                 " DISP_DETAILS    TEXT" +
+                 " CREATED_TS      TEXT, " +
+                 " UPDATED_TS      TEXT, " +
+                 " CREATED_BY      INTEGER," +
+                 " UPDATED_BY      INTEGER)";
+          db.run(table_disp);
+
+          var table_gl = "CREATE TABLE IF NOT EXISTS GL(" +
+                   " ID              INTEGER PRIMARY KEY AUTOINCREMENT," +
+                   " GL_ID           INTEGER, " +
+                   " GL_DATE         TEXT, " +
+                   " GL_TO           TEXT, " +     //TODO
+                   " S_REF           INTEGER, " +
+                   " P_REF           INTEGER, " +
+                   " AMOUNT          REAL, " +
+                   " SRC_ENT         TEXT, " +           //TODO
+                   " CLEARING        TEXT, " +
+                   " CHQ_DATE        TEXT, " +
+                   " REMARKS1        TEXT," +
+                   " REMARKS2        TEXT, " +
+                   " SP_REF          INTEGER, " +
+                   " NOS             INTEGER, " +
+                   " CREATED_TS      TEXT, " +
+                   " UPDATED_TS      TEXT, " +
+                   " CREATED_BY      INTEGER," +
+                   " UPDATED_BY      INTEGER)";
+              db.run(table_gl);
+
+
+           var 
+
+
 
 
 
