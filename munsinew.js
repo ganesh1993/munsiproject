@@ -115,6 +115,32 @@ var table_area = "CREATE TABLE IF NOT EXISTS AREA(" +
               " UPDATED_BY      INTEGER)";
           db.run(table_dcdetails);
 
+     var table_dcpurdetails = "CREATE TABLE IF NOT EXISTS DCPUR_DETAILS(" +
+                 " ID              INTEGER PRIMARY KEY AUTOINCREMENT," +
+                 " PURD_ID         INTEGER," +
+                 " PUR_ID          INTEGER," +
+                 " SR_NO           INTEGER," +
+                 " PROD_CODE       TEXT," +
+                 " PROD_DES        TEXT," +
+                 " RATE            REAL," +
+                 " BOX             INTEGER," +
+                 " QTY             INTEGER," +
+                 " TAX             REAL, " +
+                 " FREE            INTEGER," +
+                 " SCH1            REAL," +
+                 " SCHEME1         REAL," +
+                 " SCH2            REAL," +
+                 " SCHEME2         REAL," +
+                 " AMOUNT          REAL," +
+                 " TAX_AMT         REAL," +
+                 " BATCH_NO        INTEGER," +
+
+                 " CREATED_TS      TEXT, " +
+                 " UPDATED_TS      TEXT, " +
+                 " CREATED_BY      INTEGER," +
+                 " UPDATED_BY      INTEGER)";
+       db.run(table_dcpurdetails);
+
 
 
 
