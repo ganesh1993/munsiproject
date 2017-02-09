@@ -174,7 +174,43 @@ var table_area = "CREATE TABLE IF NOT EXISTS AREA(" +
               db.run(table_gl);
 
 
-           var 
+           var table_dcpmdetails = "CREATE TABLE IF NOT EXISTS DCPM_DETAILS(" +
+                   " ID              INTEGER PRIMARY KEY AUTOINCREMENT," +
+                   " DCPMD_ID        INTEGER, " +
+                   " PUR_ID          INTEGER, " +
+                   " SR_NO           INTEGER, " +
+                   " PROD_CODE       TEXT, " +
+                   " SIZE            INTEGER, " +              //TODO
+                   " RATE            REAL, " +
+                   " Qty             INTEGER, " +
+                   " Free            TEXT, " +              //TODO
+                   " REPL            TEXT, " +              //TODO
+                   " PUR_DATE        TEXT, " +
+                   " SUP_NAME        TEXT, " +
+                   " INV_NO          INTEGER, " +
+                   " GROSS_TOT       REAL, " +
+                   " SCHEME1         TEXT, " +
+                   " SCHEME2         TEXT, " +
+                   " OCT_FRGHT       INTEGER, " +
+                   " APMC            TEXT, " +               //TODO
+                   " CREDIT_AMT      REAL, " +
+                   " DISC            REAL, " +
+                   " TAX_AMT         REAL, " +
+                   " AD_AMT          REAL, " +
+                   " LS              REAL, " +
+                   " R_OFF           INTEGER, " +
+                   " FIN_AMT,         REAL, " +
+                   " REMARKS          TEXT, " +
+                   " TAX_AGAINST      TEXT, " +
+                   " X1" +                                     //TODO
+                   " X3" +                                      //TODO
+                   " X4" +                                      //TODO
+                   " X4" +                                      //TODO
+                   " CREATED_TS      TEXT, " +
+                   " UPDATED_TS      TEXT, " +
+                   " CREATED_BY      INTEGER," +
+                   " UPDATED_BY      INTEGER)";
+               db.run(table_dcpmdetails);
 
 
 
